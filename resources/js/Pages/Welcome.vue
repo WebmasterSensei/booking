@@ -15,6 +15,8 @@
         </div>
 
        <available-room/>
-       
+       <description class="pb-40"/>
+       <welcome-video/>
+       <welcome-footer/>
     </AuthenticatedLayout>
 </template>

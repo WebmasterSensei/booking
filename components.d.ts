@@ -17,9 +17,11 @@ declare module 'vue' {
     DangerButton: typeof import('./resources/js/Components/DangerButton.vue')['default']
     Dashboard: typeof import('./resources/js/Pages/Dashboard.vue')['default']
     DeleteUserForm: typeof import('./resources/js/Pages/Profile/Partials/DeleteUserForm.vue')['default']
+    Description: typeof import('./resources/js/Pages/Welcome/Description.vue')['default']
     Dropdown: typeof import('./resources/js/Components/Dropdown.vue')['default']
     DropdownLink: typeof import('./resources/js/Components/DropdownLink.vue')['default']
     Edit: typeof import('./resources/js/Pages/Profile/Edit.vue')['default']
+    Footer: typeof import('./resources/js/Pages/Welcome/Footer.vue')['default']
     ForgotPassword: typeof import('./resources/js/Pages/Auth/ForgotPassword.vue')['default']
     GuestLayout: typeof import('./resources/js/Layouts/GuestLayout.vue')['default']
     Headings: typeof import('./resources/js/Pages/Welcome/Headings.vue')['default']
@@ -39,5 +41,7 @@ declare module 'vue' {
     UpdateProfileInformationForm: typeof import('./resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue')['default']
     VerifyEmail: typeof import('./resources/js/Pages/Auth/VerifyEmail.vue')['default']
     Welcome: typeof import('./resources/js/Pages/Welcome.vue')['default']
+    WelcomeFooter: typeof import('./resources/js/Pages/Welcome/WelcomeFooter.vue')['default']
+    WelcomeVideo: typeof import('./resources/js/Pages/Welcome/WelcomeVideo.vue')['default']
   }
 }
