@@ -11,11 +11,11 @@
                 </p>
                 <div class="mt-6 flex justify-center md:justify-center space-x-4">
                     <a href="#"
-                        class="bg-white text-blue-600 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition">
-                        Get Started
+                        class="bg-white px-5 py-3 text-sm text-blue-600 md:py-3 font-semibold md:px-6 rounded-lg shadow-md hover:bg-gray-100 transition">
+                    Login
                     </a>
-                    <a href="#" class="bg-blue-700 font-semibold py-3 px-6 rounded-lg hover:bg-blue-800 transition">
-                        Learn More
+                    <a href="#" class="bg-blue-700 px-5 text-sm py-3 md:py-3 font-semibold md:px-6 rounded-lg hover:bg-blue-800 transition">
+                        Get Started
                     </a>
                 </div>
             </div>
