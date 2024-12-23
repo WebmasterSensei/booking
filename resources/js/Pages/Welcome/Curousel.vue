@@ -18,17 +18,6 @@ const images = ref<object>([
             <!-- Carousel images loop -->
             <div class="hidden duration-700 ease-in-out" v-for="item in images" data-carousel-item>
                 <img :src="item" class="absolute block w-full" alt="...">
-                <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center z-10">
-                    <p class="text-white text-lg font-bold  bg-opacity-50 px-4 py-2 rounded-md">
-                    <div className="text-center space-y-5 pt-40 pb-20">
-                        <span
-                            className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-                            Available Rooms
-                        </span>
-                        <p className="text-black/50">Here are some rooms that are available</p>
-                    </div>
-                    </p>
-                </div>
             </div>
             <!-- Absolute text overlay (not in the loop) -->
         </div>
