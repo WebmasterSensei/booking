@@ -3,13 +3,7 @@
         <div class="container mx-auto px-6 py-16 md:py-14 flex flex-col md:flex-row items-center">
             <!-- Left Content -->
             <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-                    Build Your Dream Website
-                </h1>
-                <p class="mt-4 text-lg md:text-xl text-gray-1000">
-                    Create stunning websites and web applications with ease using our tools and services.
-                </p>
-
+              
                 <div
                     class="max-w-7xl mx-auto mt-10 p-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <!-- Left Section -->

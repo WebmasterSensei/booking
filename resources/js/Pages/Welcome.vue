@@ -38,7 +38,7 @@ onMounted(() => {
     <available-room class="fade-up" />
     <description class="pb-40 fade-up" />
     <welcome-video class="fade-up" />
-    
+
     <welcome-footer class="fade-up" />
   </AuthenticatedLayout>
 </template>
