@@ -1,11 +1,15 @@
+<script setup lang="ts">
+import { Link } from '@inertiajs/vue3';
+
+</script>
+
 <template>
     <div class="bg-gradient-to-r from-gray-100 to-white text-black rounded-lg p-10">
         <div class="container mx-auto px-6 py-16 md:py-14 flex flex-col md:flex-row items-center">
             <!-- Left Content -->
             <div class="text-center">
-              
-                <div
-                    class="max-w-7xl mx-auto mt-10 p-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                <div class="max-w-7xl mx-auto mt-10 p-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <!-- Left Section -->
                     <div class="p-6 flex flex-col justify-center">
                         <!-- Title -->
@@ -16,10 +20,10 @@
                         </p>
 
                         <!-- Button -->
-                        <a href="#"
+                        <Link :href="route('book.now')"
                             class="inline-block bg-blue-500 text-white px-6 py-2 rounded-md font-medium hover:bg-blue-600 transition">
-                            Book Now
-                        </a>
+                        Book Now
+                        </Link>
 
                         <!-- Stats -->
                         <div class="flex  mt-6 lg:flex-wrap gap-4">

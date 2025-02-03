@@ -1,14 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import ApplicationLogo from '@/Components/ApplicationLogo.vue';
-import Dropdown from '@/Components/Dropdown.vue';
-import DropdownLink from '@/Components/DropdownLink.vue';
-import NavLink from '@/Components/NavLink.vue';
-import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
-import { Link } from '@inertiajs/vue3';
-
-const showingNavigationDropdown = ref<boolean>(false);
-
+import { Link, usePage } from '@inertiajs/vue3';
+// const user = prop
+const user = usePage().props.auth.user;
 </script>
 
 <template>
@@ -19,7 +12,7 @@ const showingNavigationDropdown = ref<boolean>(false);
                 <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Flowbite</span>
             </a>
             <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button type="button"tt
+                <button type="button" tt
                     class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
                     id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                     data-dropdown-placement="bottom">
@@ -47,9 +40,10 @@ const showingNavigationDropdown = ref<boolean>(false);
                                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
-                                out</a>
+                            <Link method="post" :href="route('logout')" as="button"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                            Sign
+                            out</Link>
                         </li>
                     </ul>
                 </div>
@@ -68,17 +62,15 @@ const showingNavigationDropdown = ref<boolean>(false);
                 <ul
                     class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="#"
+                        <a href="/"
                             class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500"
                             aria-current="page">Home</a>
                     </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                    <li v-if="user">
+                        <Link :href="route('book.now')" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent
+                             md:hover:text-white md:p-0 text-white md:dark:hover:text-white
+                              dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
+                               dark:border-gray-700">Book Now</Link>
                     </li>
                     <li>
                         <a href="#"
@@ -87,6 +79,10 @@ const showingNavigationDropdown = ref<boolean>(false);
                     <li>
                         <a href="#"
                             class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
                     </li>
                 </ul>
             </div>

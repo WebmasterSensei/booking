@@ -10,6 +10,7 @@ declare module 'vue' {
     ApplicationLogo: typeof import('./resources/js/Components/ApplicationLogo.vue')['default']
     AuthenticatedLayout: typeof import('./resources/js/Layouts/AuthenticatedLayout.vue')['default']
     AvailableRoom: typeof import('./resources/js/Pages/Welcome/AvailableRoom.vue')['default']
+    BookNowIndex: typeof import('./resources/js/Pages/Booking/BookNowIndex.vue')['default']
     Checkbox: typeof import('./resources/js/Components/Checkbox.vue')['default']
     ConfirmPassword: typeof import('./resources/js/Pages/Auth/ConfirmPassword.vue')['default']
     Coursel: typeof import('./resources/js/Pages/Welcome/Coursel.vue')['default']
