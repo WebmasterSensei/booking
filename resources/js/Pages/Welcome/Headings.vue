@@ -4,8 +4,8 @@ import { Link } from '@inertiajs/vue3';
 </script>
 
 <template>
-    <div class="bg-gradient-to-r from-gray-100 to-white text-black rounded-lg p-10">
-        <div class="container mx-auto px-6 py-16 md:py-14 flex flex-col md:flex-row items-center">
+    <div class="bg-gradient-to-r  text-black rounded-lg p-10">
+        <div class="container mx-auto px-6 py-16 md:py-1 flex flex-col md:flex-row items-center">
             <!-- Left Content -->
             <div class="text-center">
 

@@ -23,6 +23,7 @@
 
 <style>
     * {
+        /* width: 100%; */
         font-family: "Poppins", serif;
         font-weight: 400;
         font-size: 14px;

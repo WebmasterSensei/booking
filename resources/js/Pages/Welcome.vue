@@ -26,14 +26,14 @@ onMounted(() => {
   <AuthenticatedLayout>
     <curousel class="fade-up" />
 
-    <div class="grid lg:grid-cols-[65%_35%] gap-4 mt-7">
-      <div class="p-4 text-white fade-up">
-        <headings />
-      </div>
-      <div class="p-4 text-white fade-up">
-        <ratings />
-      </div>
-    </div>
+    <div class="grid lg:grid-cols-3 gap-4 mt-7">
+  <div class="col-span-2 p-4 text-white fade-up">
+    <headings />
+  </div>
+  <div class="p-4 text-white fade-up">
+    <ratings />
+  </div>
+</div>
 
     <available-room class="fade-up" />
     <description class="pb-40 fade-up" />
