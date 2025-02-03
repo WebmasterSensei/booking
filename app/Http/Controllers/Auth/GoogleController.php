@@ -10,6 +10,8 @@ use Laravel\Socialite\Facades\Socialite;
 
 class GoogleController extends Controller
 {
+    
+
     // Redirect user to Google
     public function redirect()
     {
@@ -19,7 +21,8 @@ class GoogleController extends Controller
     // Handle Google callback
     public function callback()
     {
-        $googleUser = Socialite::driver('google')->user();
+        // dd();
+        $googleUser = Socialite::driver('google')->stateless()->user();
 
         $user = User::updateOrCreate(
             ['email' => $googleUser->email],
@@ -34,6 +37,6 @@ class GoogleController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('dashboard'); // Change to your preferred route
+        return redirect()->route('welcome'); // Change to your preferred route
     }
 }

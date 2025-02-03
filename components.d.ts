@@ -7,6 +7,8 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AddModal: typeof import('./resources/js/Pages/Booking/AddModal.vue')['default']
+    AddRoomsModal: typeof import('./resources/js/Pages/Booking/AddRoomsModal.vue')['default']
     ApplicationLogo: typeof import('./resources/js/Components/ApplicationLogo.vue')['default']
     AuthenticatedLayout: typeof import('./resources/js/Layouts/AuthenticatedLayout.vue')['default']
     AvailableRoom: typeof import('./resources/js/Pages/Welcome/AvailableRoom.vue')['default']
